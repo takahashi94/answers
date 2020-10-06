@@ -16,7 +16,7 @@ class AnswerController extends Controller
      */
     public function index()
     {
-        //
+        return view('answer.index');
     }
 
     /**
@@ -43,7 +43,7 @@ class AnswerController extends Controller
 
         $answer->fill($request->all())->save();
 
-        return redirect('/');
+        return redirect('answer');
     }
 
     /**
