@@ -17,6 +17,8 @@ Route::get('/', 'AnswerController@create');
 
 Route::resource('answer', 'AnswerController');
 
+Route::resource('system', 'SystemController');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
